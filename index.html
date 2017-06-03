@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no">
+
+    <link rel="stylesheet" href="index.css">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <h1>Hey!</h1>
+
+      <p>I'll wait between</p>
+      <input id="from" type="text" value="1m">
+      <p>and</p>
+      <input id="to" type="text" value="2m">
+      <p>and then I'll ping you</p>
+      <button id="go">Go</button>
+    </div>
+    <div id="loader" class="hidden">
+      <div class="loader"></div>
+      <button id="cancel">Cancel</button>
+    </div>
+    <div id="timeout" class="hidden">
+      <h1>
+        Time's up!
+      </h1>
+      <button id="restart">Bummer</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.3/howler.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nosleep/0.5.0/NoSleep.min.js"></script>
+    <script src='index.js'></script>
+  </body>
+</html>
